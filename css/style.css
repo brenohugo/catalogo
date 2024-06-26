@@ -9,9 +9,9 @@
 }
 
 :root {
-     --orange: #f78b00;
-     --blue: #00285f;
-     --gray:   #ededed;
+    --orange: #f78b00;
+    --blue: #00285f;
+    --gray:  #ededed;
 }
 
 html,
@@ -51,8 +51,8 @@ nav{
 }
 
 nav ul{
-    display: flex;
-    flex-direction: row;
+    display: flex ;
+    flex-direction: row;    
 }
 
 nav ul li{
@@ -75,7 +75,7 @@ nav ul button{
     background: transparent;
     padding: 8px 40px;
     cursor: pointer;
-    margin-left: 30 px;
+    margin-left: 30px;
     color: var(--blue);
     font-weight: bold;
     border-radius: 4px;
@@ -89,7 +89,7 @@ nav ul button:hover{
 
 .content .header-block{
     max-width: 1000px;
-    min-width: 300px;
+    min-height: 300px;
     height: 450px;
     background: var(--blue);
     border-radius: 8px;
@@ -105,7 +105,7 @@ nav ul button:hover{
     width: 50%;
     position: absolute;
     right: 2%;
-    bottom: 2%;
+    bottom: 2%;  
 }
 
 .header-block .text{
@@ -136,7 +136,7 @@ section .catalog{
 }
 
 section .filter-card{
-    width: 1000px;
+    width: 980px;
     height: 150px;
     background: var(--gray);
     border-radius: 8px;
@@ -182,7 +182,7 @@ section .card-wrapper{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
-    grid-gap: 30px;
+    grid-gap:30px;
     padding-top: 50px;
 }
 
@@ -223,7 +223,7 @@ section .card-item{
     padding: 15px 0px;
     border: none;
     background: var(--blue);
-    border-radius: 4px; 
+    border-radius: 4px;
     color: white;
     font-weight: bold;
     font-size: 1.1em;
@@ -231,7 +231,8 @@ section .card-item{
     transition: 0.3s ease;
     margin-bottom: 10px;
 }
-.card-item button{
+
+.card-item button:hover{
     background: #dedede;
     color: var(--blue);
 }
@@ -239,12 +240,13 @@ section .card-item{
 .about{
     width: 100%;
     height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 10px;
 }
 
-.about-content{
+.about-content {
     max-width: 1000px;
     min-width: 300px;
     height: 600px;
@@ -263,7 +265,7 @@ section .card-item{
     width: 25%;
     min-width: 300px;
     height: 100%;
-    background: #123456a1;
+    background: #000000a1;
     border-radius: 8px;
 }
 
@@ -281,4 +283,171 @@ section .card-item{
     text-align: right;
     width: 90%;
     margin-bottom: 20px;
+}
+
+.right p{
+    max-width: 90%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.4);
+}   
+
+.features{
+    width: 100%;
+    height: 100%;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.title-wrapper-features{
+    padding: 20px 0px;
+}
+
+.features-card-block{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(420px, 1fr));
+    grid-gap: 30px;
+}
+
+.filter-card-item{
+    max-width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dedede3b;
+    border-radius: 4px;
+}
+
+.features-text-content{
+    max-width: 60%;
+    margin: 5px;
+}
+
+.filter-card-item img{
+    width: 64px;
+    height: 64px;
+}
+
+footer{
+    width: 100%;
+    height: 250px
+}
+
+footer .main{
+    width: 100%;
+    height: 200px;
+    background: var(--orange);
+    padding: 20px 10px;
+}
+
+.footer-links{
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-company, .footer-rental, .footer-contact, .footer-social{
+    color: white;
+    height: 100%;
+    min-height: 100px;
+}
+
+.footer-links h4{
+    margin-top: 10px;
+}
+
+.footer-links{
+    margin-bottom: 8px; 
+}
+.main .footer-social img {
+    width: 32px;
+    height: 32px;
+}
+
+footer .last{
+    width: 100%;
+    height: 50px;
+    background: var(--blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 576px){
+    nav ul li{
+        display: none;
+    }
+}
+
+.header-block img{
+    width: 70%;
+    position: absolute;
+    right: 16%;
+    top: 30%;
+}
+
+.header-block .text{
+    position: absolute;
+    bottom: 10%;
+    left: 15;
+}
+
+section .filter-card{
+    width: 390px;
+    padding: 0px 10px;
+}
+
+.search-input{
+    max-width: 700px;
+    min-width: 240px;
+}
+
+.search-button{
+    max-width: 150px;
+    min-width: 80px;
+}
+
+.about{
+    margin-top: 100px;
+}
+
+.title-wrapper-about{
+    margin-bottom: 20px;
+}
+
+.about-content{
+    flex-direction: column;
+    height: 100%;
+}
+
+.left{
+    display: none;
+}
+
+.right{
+    width: 90px;
+}
+
+.right p{
+    width: 100%;
+    margin: 0px;
+    text-align: left;
 }
